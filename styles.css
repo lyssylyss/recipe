@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box;
+    background-color: rgba(122,191,191,.5);
+    font-family: 'Bebas Neue', 'Montserrat', sans-serif;
+}
+
+body {
+    width: 414px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f2f2f2;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+
+menu button {
+    color: #EB5428;
+    font-family: 'Bebas Neue';
+}
+
+menu li {
+    list-style: none;
+    font-size: 20px;
+}
+
+p, dd, li, nav, input {
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    position: absolute;
+    top: 70px;
+
+}
+
+input {
+    border-color: #EB5428;
+    margin: 0;
+}
+
+dt {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#tacophoto {
+    width: 100%;
+}
+
+article > p {
+    margin-left: 5px;
+}
+
+#sidedish {
+    background-color: #7ABFBF;
+
+}
+
+.eachdish {
+    margin-left: 5px;
+
+}
+
+
+nav {
+    text-transform: uppercase;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #EB5428;
+    font-size: 20px;
+}
+
+li span {
+    background-color: #EB5428;
+}
+
+footer {
+    text-align: center;
+
+}
+
+footer img {
+    width: 50%;
+}
+
+footer p {
+    font-size: 20px;
+    font-family: 'Bebas Neue';
+}
+
+#social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.socialsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #EB5428;
+}
