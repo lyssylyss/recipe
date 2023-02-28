@@ -14,6 +14,10 @@ header {
     background-color: #f2f2f2;
 }
 
+header h1 {
+    padding-top: 125px;
+}
+
 h1 {
     font-size: 40px;
     text-align: center;
@@ -28,11 +32,20 @@ h3 {
     font-size: 25px;
 }
 
+menu {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
 
 menu button {
     color: #EB5428;
     font-family: 'Bebas Neue';
+    border: none;
+    background-color: #f2f2f2;
 }
+
 
 menu li {
     list-style: none;
@@ -44,11 +57,32 @@ p, dd, li, nav, input {
     font-size: 16px;
 }
 
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.eachdish {
+    display: flex;
+}
+
+.sidecaption {
+    display: block;
+    padding-left: 10px;
+}
+
+
+
 form {
     display: flex;
     position: absolute;
-    top: 70px;
+    top: 90px;
+    margin-left: 70px;
 
+}
+
+#search h2 {
+    display: none;
 }
 
 input {
@@ -65,7 +99,7 @@ dt {
     width: 100%;
 }
 
-article > p {
+main > p {
     margin-left: 5px;
 }
 
@@ -74,14 +108,40 @@ article > p {
 
 }
 
-.eachdish {
-    margin-left: 5px;
+#sidedish img {
+    padding: 10px;
+}
 
+#mainnav {
+    display: none;
 }
 
 
+#mainnav h2 {
+    display: none;
+}
+
+#logo svg {
+    background-color: #EB5428;
+}
+
+#hamburger {
+    position: absolute;
+    top: 0;
+}
+
+#avatar {
+    position: absolute;
+    top: 0;
+    right: 400px;
+}
+
 nav {
     text-transform: uppercase;
+}
+
+nav h2 {
+    display: none;
 }
 
 nav li {
@@ -94,9 +154,10 @@ nav a {
     font-size: 20px;
 }
 
-li span {
-    background-color: #EB5428;
+#mainnav span a {
+    color: black;
 }
+
 
 footer {
     text-align: center;
@@ -104,12 +165,16 @@ footer {
 }
 
 footer img {
-    width: 50%;
+    width: 40%;
 }
 
 footer p {
     font-size: 20px;
     font-family: 'Bebas Neue';
+}
+
+footer h2 {
+    display: none;
 }
 
 #social {
@@ -123,4 +188,117 @@ footer p {
     align-items: center;
     text-decoration: none;
     color: #EB5428;
+}
+
+@media screen and (min-width:768px) {
+
+    body {
+        width: 768px;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #logo {
+        position: relative;
+        right: 60px;
+    }
+
+    #mainnav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .food {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #mainnav img {
+        width: 15%;
+    }
+
+    #details {
+        text-align: center;
+    }
+
+   #sidedish {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    footer {
+    text-align: left;
+    margin-left: 80px;
+   }
+   
+   #logo {
+    position: absolute;
+    top: 27px;
+    left: -650px;
+    
+   }
+
+   form {
+    top: 80px;
+    margin-left: 250px;
+
+   }
+
+   #avatar {
+    top: 30px;
+    right: 100px;
+   }
+
+   @media screen and (min-width:1280px) {
+    
+    body {
+        width: 1280px;
+    }
+
+    #logo {
+        position: absolute;
+        left: -1150px;
+        
+       }
+
+    #avatar {
+        top: 30px;
+        right: 0;
+       }
+
+   }
+
+   #sidedish {
+    display: flex;
+   }
+
+   #ingredients {
+    display: flex;
+    flex-direction: column;
+   }
+
+   #directions {
+    display: flex;
+    flex-direction: column;
+   }
+
+   #ingredients h2 {
+    text-align: left;
+   }
+
+   #details {
+    display: flex;
+    background-color: black;
+    color: #7ABFBF;
+    padding: 10px;
+   }
+
+   dl {
+    display: flex;
+   }
+
+
 }
